@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Développeur Web & Mobile passionné, créateur de solutions numériques performantes">
+  <title>Kevin Zongo | Développeur Full-Stack</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <img src="images/profile.jpg" alt="Kevin Zongo" class="profile-pic" />
+      <h1>Kevin Zongo</h1>
+      <div class="typing-container">
+        <span class="typed-text">Développeur Full-Stack</span>
+        <span class="cursor">&nbsp;</span>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:contact@kevinzongo.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="skills section">
+    <h2 class="section-title">Expertise Technique</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fab fa-android skill-icon"></i>
+        <h3>Développement Mobile</h3>
+        <p>Flutter • Firebase • Dart</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-code skill-icon"></i>
+        <h3>Développement Web</h3>
+        <p>HTML5 • CSS3 • JavaScript</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-database skill-icon"></i>
+        <h3>Backend & Bases de données</h3>
+        <p>Node.js • MySQL • API REST</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects section">
+    <h2 class="section-title">Réalisations</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Projet 1">
+        <div class="project-info">
+          <h3>Application E-commerce</h3>
+          <p>Solution mobile complète avec paiement sécurisé</p>
+          <a href="#" class="project-link">Voir le projet →</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Projet 2">
+        <div class="project-info">
+          <h3>Plateforme SaaS</h3>
+          <p>Gestion de projet en temps réel</p>
+          <a href="#" class="project-link">Détails →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section">
+    <h2 class="section-title">Collaborons ensemble</h2>
+    <div class="contact-content">
+      <p>Disponible pour de nouvelles opportunités</p>
+      <a href="mailto:contact@kevinzongo.com" class="cta-button">Me contacter</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 Kevin Zongo. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
