@@ -5,28 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Développeur Web & Mobile passionné, créateur de solutions numériques performantes">
   <title>Kevin Zongo | Développeur Full-Stack</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="hero">
     <div class="hero-container">
+      <div class="hero-image">
+        <img src="profile.jpeg" alt="Kevin Zongo" class="profile-pic" />
+      </div>
       <div class="hero-text">
         <h1>Salut, je suis Kevin Zongo</h1>
-        <p>Je suis <span class="typed-text"></span></p>
+        <p>Développeur web et mobile,<br>
+          je crée des applications web et mobiles adaptées à vos besoins.
+        </p>
         <div class="cta-buttons">
           <a href="#contact" class="cta-button">Me contacter</a>
           <a href="#projets" class="cta-button">Voir mon travail</a>
         </div>
-        <div class="social-links">
-          <a href="https://github.com/tonpseudo" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/tonprofil" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="cv-kevin.pdf" class="cta-button" download>Télécharger mon CV</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="profile.jpeg" alt="Kevin Zongo" class="profile-pic" />
       </div>
     </div>
   </header>
@@ -39,7 +35,7 @@
     </ul>
   </nav>
 
-  <!<section id="competences" class="skills section reveal">
+  <section id="competences" class="skills section reveal">
     <h2 class="section-title">Expertise Technique</h2>
     <div class="skills-grid">
       <div class="skill-card">
@@ -118,31 +114,17 @@
         <div class="info-card">
           <i class="fas fa-map-marker-alt"></i>
           <h3>Localisation</h3>
-          <p>Burkina Faso , kongoussi</p>
+          <p>Burkina Faso, Kongoussi</p>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="foo-- Sections Compétences, Projets, Contact identiques à ta version initiale -->
-  <!-- Ajout de bouton Dark Mode -->
-  <div style="text-align:center; margin-top:1rem;">
-    <button id="darkToggle" class="cta-button">🌙 Mode sombre</button>
-  </div>
-
   <footer class="footer">
     <p>© 2025 Kevin Zongo. Tous droits réservés.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
-    new Typed('.typed-text', {
-      strings: ['Développeur Web', 'Développeur Mobile', 'Créateur d\'expériences digitales'],
-      typeSpeed: 60,
-      backSpeed: 30,
-      loop: true
-    });
-
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -152,14 +134,9 @@
         }
       });
     }, { threshold: 0.1 });
-    reveals.forEach(section => observer.observe(section));
-
-    document.getElementById("darkToggle").onclick = () => {
-      document.body.classList.toggle("dark-mode");
-    }
+    reveals.forEach(section => {
+      observer.observe(section);
+    });
   </script>
 </body>
 </html>
-
-
-
