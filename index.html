@@ -14,7 +14,7 @@
       <img src="profile.jpeg" alt="Kevin Zongo" class="profile-pic" />
       <h1>Kevin Zongo</h1>
       <div class="typing-container">
-        <span class="typed-text">Développeur Full-Stack</span>
+        <span class="typed-text">Développeur web et mobile</span>
         <span class="cursor">&nbsp;</span>
       </div>
       <div class="social-links">
@@ -25,7 +25,15 @@
     </div>
   </header>
 
-  <section class="skills section">
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="competences" class="skills section">
     <h2 class="section-title">Expertise Technique</h2>
     <div class="skills-grid">
       <div class="skill-card">
@@ -46,7 +54,7 @@
     </div>
   </section>
 
-  <section class="projects section">
+  <section id="projets" class="projects section">
     <h2 class="section-title">Réalisations</h2>
     <div class="projects-grid">
       <div class="project-card">
@@ -68,16 +76,51 @@
     </div>
   </section>
 
-  <section class="contact section">
+  <section id="contact" class="contact section">
     <h2 class="section-title">Collaborons ensemble</h2>
-    <div class="contact-content">
-      <p>Disponible pour de nouvelles opportunités</p>
-      <a href="mailto:contact@kevinzongo.com" class="cta-button">Me contacter</a>
+    <div class="contact-container">
+      <form class="contact-form form-grid">
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Adresse email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group full-width">
+          <label for="subject">Sujet</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group full-width">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="cta-button">Envoyer le message <i class="fas fa-paper-plane"></i></button>
+      </form>
+      <div class="contact-info">
+        <div class="info-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>contact@kevinzongo.com</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-phone"></i>
+          <h3>Téléphone</h3>
+          <p>+226 62 93 27 10</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Localisation</h3>
+          <p>Burkina Faso , kongoussi</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
-    <p>© 2024 Kevin Zongo. Tous droits réservés.</p>
+    <p>© 2025 Kevin Zongo. Tous droits réservés.</p>
   </footer>
 </body>
 </html>
+  
