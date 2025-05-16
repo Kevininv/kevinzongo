@@ -52,8 +52,37 @@ body {
   color: var(--accent-color);
 }
 
+.main-nav {
+  background: var(--primary-color);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: var(--accent-color);
+}
+
 .section {
   padding: 4rem 1rem;
+  animation: fadeIn 0.6s ease-out;
 }
 
 .section-title {
@@ -132,6 +161,78 @@ body {
   margin-top: 1rem;
 }
 
+.contact-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.contact-info {
+  display: grid;
+  gap: 1.5rem;
+  align-content: start;
+}
+
+.info-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card i {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
 .cta-button {
   display: inline-block;
   padding: 1rem 2rem;
@@ -139,12 +240,16 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 50px;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
 }
 
 .cta-button:hover {
   background: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,200,151,0.3);
 }
 
 .footer {
@@ -156,7 +261,18 @@ body {
 }
 
 @media (max-width: 768px) {
-  .skills-grid, .projects-grid {
+  .skills-grid,
+  .projects-grid,
+  .contact-container {
     grid-template-columns: 1fr;
   }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
