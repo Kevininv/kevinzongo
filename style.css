@@ -33,7 +33,7 @@ body {
 
 .hero-image {
   flex: 1;
-  min-width: 350px;
+  min-width: 330px;
   display: flex;
   justify-content: center;
   order: -1;
@@ -45,7 +45,7 @@ body {
 }
 
 .profile-pic {
-  width: 350px;
+  width: 330px;
   height: 360px;
   border-radius: 50%;
   object-fit: cover;
